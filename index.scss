@@ -1,4 +1,4 @@
-$font-primary: Poppins;
+$font-primary: 'Poppins';
 $font-secondary: 'Abril Fatface';
 $color-text: #000;
 $header-height: 127px;
@@ -73,7 +73,7 @@ $inner-gap: 10px;
   text-align: center;
   font-size: 128px;
   color: #759c63;
-  font-family: 'Abril Fatface', serif;
+  font-family: $font-secondary;
 
   .perfect {
     position: relative;
@@ -104,17 +104,16 @@ $inner-gap: 10px;
   position: absolute;
   margin: 0 !important;
   top: 655px;
-  left: 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 80px;
+  padding: 0 80px;
   box-sizing: border-box;
   gap: 20px;
   text-align: left;
   font-size: 16px;
   color: #759c63;
-  font-family: Poppins, serif;
+  font-family: $font-primary;
 
   .header-desc {
     align-self: stretch;
@@ -169,7 +168,7 @@ $inner-gap: 10px;
       text-align: center;
       font-size: 16px;
       color: #fff;
-      font-family: Poppins, serif;
+      font-family: $font-primary;
 
       .order-now {
         position: relative;
@@ -185,13 +184,13 @@ $inner-gap: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px 80px;
+  padding: 0 80px;
   box-sizing: border-box;
   gap: 34px;
   text-align: left;
   font-size: 64px;
   color: #759c63;
-  font-family: 'Abril Fatface', serif;
+  font-family: $font-secondary;
 
   .menu {
     position: relative;
@@ -211,7 +210,7 @@ $inner-gap: 10px;
     text-align: left;
     font-size: 24px;
     color: #000;
-    font-family: Poppins, serif;
+    font-family: $font-primary;
 
     .article {
       height: 100%;
@@ -285,7 +284,7 @@ $inner-gap: 10px;
           text-align: left;
           font-size: 20px;
           color: #000;
-          font-family: Poppins, serif;
+          font-family: $font-primary;
 
           .akar-iconsplus,
           .akar-iconsminus {
@@ -310,13 +309,14 @@ $inner-gap: 10px;
           text-align: center;
           font-size: 16px;
           color: #8bbf73;
-          font-family: Poppins, serif;
+          font-family: $font-primary;
           cursor: pointer;
         }
       }
     }
   }
 }
+
 .section-three {
   width: 100%;
   height: 890px;
@@ -327,11 +327,85 @@ $inner-gap: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0px 80px;
+  padding: 0 80px;
   box-sizing: border-box;
   gap: 38px;
   text-align: center;
   font-size: 24px;
   color: #000;
-  font-family: Poppins, serif;
+  font-family: $font-primary;
+
+  .checkout-frame {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 152px;
+
+    .baked-goods-frame {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 34px;
+      text-align: left;
+      font-size: 24px;
+      color: #000;
+      font-family: $font-primary;
+
+      .baked-goods {
+        align-self: stretch;
+        position: relative;
+        font-weight: 600;
+      }
+
+      .baked-goods-items-parent {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 28px;
+        text-align: left;
+        font-size: 20px;
+        color: #000;
+        font-family: $font-primary;
+
+        .baked-goods-items {
+          display: flex;
+          align-items: flex-end;
+          gap: 36px;
+
+          .baked-goods-items-btn {
+            position: relative;
+            border-radius: 34px;
+            background-color: #c5dfb9;
+            border: 11px solid #c5dfb9;
+            box-sizing: border-box;
+            overflow: hidden;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 19px;
+            text-align: left;
+            font-size: 20px;
+            color: #000;
+            font-family: $font-primary;
+          }
+
+          .akar-iconsplus {
+            width: 24px;
+            position: relative;
+            max-height: 100%;
+          }
+
+          .div {
+            position: relative;
+          }
+        }
+      }
+    }
+  }
 }
