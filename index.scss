@@ -1,0 +1,337 @@
+$font-primary: Poppins;
+$font-secondary: 'Abril Fatface';
+$color-text: #000;
+$header-height: 127px;
+$header-padding: 0px 38px;
+$default-gap: 20px;
+$inner-gap: 10px;
+
+.header {
+  width: 100%;
+  height: $header-height;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $header-padding;
+  box-sizing: border-box;
+  gap: $default-gap;
+  text-align: left;
+  font-size: 16px;
+  color: $color-text;
+  font-family: $font-primary;
+
+  .home-btns {
+    align-self: stretch;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $inner-gap;
+
+    .home .menu .order {
+      position: relative;
+    }
+  }
+
+  .perfectloaf {
+    position: relative;
+    font-size: 20px;
+    font-family: $font-secondary;
+  }
+
+  .home-icon-btns {
+    align-self: stretch;
+    width: 23px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $inner-gap;
+
+    .akaricon {
+      width: 24px;
+      position: relative;
+      max-height: 100%;
+    }
+  }
+}
+
+.section-one {
+  width: 100%;
+  height: 614px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 113px;
+  text-align: center;
+  font-size: 128px;
+  color: #759c63;
+  font-family: 'Abril Fatface', serif;
+
+  .perfect {
+    position: relative;
+    z-index: 0;
+  }
+
+  .loaf {
+    position: relative;
+    z-index: 1;
+  }
+
+  .slices-freshly-baked-bread-gol-icon {
+    width: 605px;
+    height: 605px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    object-fit: cover;
+    z-index: 2;
+  }
+}
+
+.header-frame {
+  width: 100%;
+  height: 99px;
+  position: absolute;
+  margin: 0 !important;
+  top: 655px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 80px;
+  box-sizing: border-box;
+  gap: 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #759c63;
+  font-family: Poppins, serif;
+
+  .header-desc {
+    align-self: stretch;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .freshly-baked-try {
+      width: 447px;
+      position: relative;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+  }
+
+  .header-btns {
+    width: 490px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+    text-align: center;
+    color: #8bbf73;
+
+    .header-btn-tray {
+      flex: 1;
+      border-radius: 20px;
+      border: 1px solid #8bbf73;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 19px 15px;
+    }
+
+    .header-btn-order {
+      flex: 1;
+      width: 100%;
+      position: relative;
+      border-radius: 20px;
+      background-color: #759c63;
+      overflow: hidden;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 19px 15px;
+      box-sizing: border-box;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      font-family: Poppins, serif;
+
+      .order-now {
+        position: relative;
+      }
+    }
+  }
+}
+
+.section-two {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 80px;
+  box-sizing: border-box;
+  gap: 34px;
+  text-align: left;
+  font-size: 64px;
+  color: #759c63;
+  font-family: 'Abril Fatface', serif;
+
+  .menu {
+    position: relative;
+  }
+
+  .menu-card {
+    width: 100%;
+    height: 694px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-content: start;
+    align-content: start;
+    column-gap: 34px;
+    row-gap: 34px;
+    text-align: left;
+    font-size: 24px;
+    color: #000;
+    font-family: Poppins, serif;
+
+    .article {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+
+      .card-image-icon {
+        height: 232px;
+        width: 232px;
+        position: relative;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+
+      .card-frame {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .card-texts {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .article-header {
+          align-self: stretch;
+          position: relative;
+        }
+
+        .article-body {
+          align-self: stretch;
+          position: relative;
+          font-size: 16px;
+          font-weight: 400;
+        }
+
+        .article-price {
+          align-self: stretch;
+          position: relative;
+          font-size: 32px;
+          font-weight: 200;
+        }
+      }
+
+      .card-frame-buttons {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+
+        .card-items {
+          position: relative;
+          overflow: hidden;
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 19px;
+          text-align: left;
+          font-size: 20px;
+          color: #000;
+          font-family: Poppins, serif;
+
+          .akar-iconsplus,
+          .akar-iconsminus {
+            width: 24px;
+            position: relative;
+            max-height: 100%;
+          }
+        }
+
+        .card-tray-button {
+          height: 39px;
+          position: relative;
+          border-radius: 20px;
+          border: 1px solid #8bbf73;
+          box-sizing: border-box;
+          overflow: hidden;
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 19px 15px;
+          text-align: center;
+          font-size: 16px;
+          color: #8bbf73;
+          font-family: Poppins, serif;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.section-three {
+  width: 100%;
+  height: 890px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 80px;
+  box-sizing: border-box;
+  gap: 38px;
+  text-align: center;
+  font-size: 24px;
+  color: #000;
+  font-family: Poppins;
+}
