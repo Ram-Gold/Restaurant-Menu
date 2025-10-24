@@ -3,32 +3,31 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./index.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=[object Object]&display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=[object Object]&display=swap"/>
     <title>RestaurantMenu</title>
 </head>
 <body>
-<div class="header">
+<header class="header">
     <div class="home-btns">
         <div class="home">Home</div>
         <div class="menu">Menu</div>
         <div class="order">Order</div>
     </div>
-    <div class="perfectloaf">PerfectLoaf</div>
+    <div class="perfect-loaf">PerfectLoaf</div>
     <div class="home-icon-btns">
         <img class="akaricon" src="src/akar-icons_person.svg" alt="">
         <img class="akaricon" src="src/akar-icons_search.svg" alt="">
         <img class="akaricon" src="src/akar-icons_cart.svg" alt="">
     </div>
-</div>
-<div class="section-one">
-    <div class="perfect">PERFECT</div>
-    <div class="loaf">LOAF</div>
+</header>
+<section class="section-one">
+    <b>PERFECT LOAF</b>
     <img class="slices-freshly-baked-bread-gol-icon"
          src="src/slices-freshly-baked-bread-golden-crust-fluffy-interior-perfect-sandwiches-toast.png" alt="">
-</div>
-<div class="header-frame">
+</section>
+<section class="header-frame">
     <div class="header-desc">
         <div class="freshly-baked-try">Freshly baked! Try our new Golden Honey Oat Loaf. It's incredibly soft, perfect
             for sandwiches, and on sale this week at a special introductory price!
@@ -42,11 +41,11 @@
             <div class="add-to-tray">Order Now</div>
         </div>
     </div>
-</div>
-<div class="section-two">
-    <div class="menu">Menu</div>
+</section>
+<section class="section-two">
+    <h3>Menu</h3>
     <div class="menu-card">
-        <div class="article">
+        <article>
             <img class="card-image-icon" src="src/sourdough-yeast-sour-bread-food.jpg" alt="">
             <div class="card-frame">
                 <div class="card-texts">
@@ -71,8 +70,8 @@
                     </button>
                 </div>
             </div>
-        </div>
-        <div class="article">
+        </article>
+        <article>
             <img class="card-image-icon" src="src/cooked-bread-with-ingredients-eggs-tapioca-flour-cup.jpg" alt="">
             <div class="card-frame">
                 <div class="card-texts">
@@ -97,8 +96,8 @@
                     </button>
                 </div>
             </div>
-        </div>
-        <div class="article">
+        </article>
+        <article>
             <img class="card-image-icon" src="src/chocolate-chips-cookies.jpg" alt="">
             <div class="card-frame">
                 <div class="card-texts">
@@ -123,8 +122,8 @@
                     </button>
                 </div>
             </div>
-        </div>
-        <div class="article">
+        </article>
+        <article>
             <img class="card-image-icon" src="src/delicious-roll-food-bun-rolls.jpg" alt="">
             <div class="card-frame">
                 <div class="card-texts">
@@ -149,14 +148,14 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </article>
     </div>
-</div>
-<div class="section-three">
-    <div class="checkout">Checkout</div>
+</section>
+<section class="section-three">
+    <h3>Checkout</h3>
     <div class="checkout-frame">
-        <div class="baked-goods-frame">
-            <div class="baked-goods">Baked Goods</div>
+        <fieldset class="baked-goods-frame">
+            <b>Baked Goods</b>
             <div class="baked-goods-items-parent">
                 <div class="baked-goods-items">
                     <div class="baked-goods-items-btn">
@@ -207,30 +206,30 @@
                     <div class="baked-goods-items-text">Cinnamon Roll</div>
                 </div>
             </div>
-        </div>
-        <div class="sides-and-options">
-            <div class="sides-options">Sides & Options</div>
+        </fieldset>
+        <fieldset class="sides-and-options">
+            <b>Sides & Options</b>
             <div class="sides-and-options-items">
-                <div class="sides-and-options-items-child">
-                </div>
-                <div class="div">Add side of house-made jam (+₱40.00)</div>
+                <input type="checkbox" id="jam-checkbox" name="option" value="value1">
+                <label for="jam-checkbox">Add side of house-made jam (+₱40.00)</label>
             </div>
             <div class="section-three-sides-and-options-items">
-                <div class="sides-and-options-items-child">
-                </div>
-                <div class="div">Add side of whipped butter (+₱30.00)</div>
+                <input type="checkbox" id="butter-checkbox" name="option" value="value1">
+                <label for="butter-checkbox">Add side of whipped butter (+₱30.00)</label>
             </div>
-        </div>
+        </fieldset>
     </div>
     <div class="special-instructions-frame">
-        <div class="baked-goods">Special Instructions</div>
-        <div class="section-three-special-instructions">
-        </div>
+        <label for="special-instructions">Special Instructions</label>
+        <textarea id="special-instructions" rows="14" cols="82" placeholder="Enter some data here!"></textarea>
     </div>
-    <div class="checkout-btn">
-        <b class="div">Go To Checkout</b>
+    <input type="submit" class="checkout-btn" value="Go to Checkout">
+</section>
+<footer>
+    <div class="perfect-loaf-all-container">
+        <p class="perfect-loaf-all">© 2024 Perfect Loaf. All rights reserved.</p>
+        <p class="perfect-loaf-all">Made with love by Ram Gold.</p>
     </div>
-</div>
-
+</footer>
 </body>
 </html>
